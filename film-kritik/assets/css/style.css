@@ -1,0 +1,286 @@
+/* ====== GLOBAL ====== */
+body {
+  background: radial-gradient(
+    1200px 600px at 15% -10%,
+    #3b82f6 0%,
+    #0b1020 55%
+  );
+  color: #e5e7eb;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #38bdf8;
+}
+
+a:hover {
+  color: #7dd3fc;
+}
+
+/* ====== FILM DETAIL TOP BLOCK ====== */
+.card-film-detail {
+  background: linear-gradient(180deg, #1e3a8a, #111827);
+  border-radius: 20px;
+  border: 1px solid #2563eb;
+  box-shadow: 0 25px 60px rgba(0,0,0,.55);
+}
+
+/* ====== GENERAL PANELS ====== */
+.card-panel {
+  background: linear-gradient(180deg, #111827, #0b1020);
+  border-radius: 18px;
+  border: 1px solid #1e40af;
+  box-shadow: 0 15px 40px rgba(0,0,0,.45);
+}
+
+/* ====== COMMENTS / REVIEWS BLOCK ====== */
+.review-item {
+  background: linear-gradient(180deg, #1f2933, #111827);
+  border-radius: 16px;
+  border-left: 4px solid #f59e0b;
+  padding: 16px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.review-item:hover {
+  transform: translateX(6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.5);
+}
+
+/* ====== FILM CARDS ====== */
+.card-film {
+  background: linear-gradient(180deg, #0f172a, #020617);
+  border-radius: 18px;
+  border: 1px solid #1e3a8a;
+  transition: transform .3s ease, box-shadow .3s ease;
+  overflow: hidden;
+}
+
+.card-film:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 30px 70px rgba(0,0,0,.7);
+}
+
+/* ====== POSTER ====== */
+.poster-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.poster-wrap img {
+  border-radius: 18px 18px 0 0;
+  height: 360px;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+
+.card-film:hover .poster-wrap img {
+  transform: scale(1.12);
+}
+
+/* ====== BADGES ====== */
+.badge-year {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(135deg, #facc15, #f97316);
+  color: #422006;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: .75rem;
+  font-weight: 800;
+  box-shadow: 0 6px 18px rgba(0,0,0,.6);
+}
+
+.bg-secondary {
+  background: linear-gradient(135deg, #22d3ee, #38bdf8) !important;
+  color: #082f49;
+}
+
+/* ====== TITLES ====== */
+.film-title {
+  font-weight: 900;
+  color: #f9fafb;
+  letter-spacing: .5px;
+}
+
+/* ====== FORMS ====== */
+.input-dark,
+.input-dark:focus {
+  background: #020617;
+  border: 1px solid #2563eb;
+  color: #ffffff;
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+.input-dark:focus {
+  box-shadow: 0 0 0 2px rgba(59,130,246,.4);
+}
+
+.input-dark::placeholder {
+  color: #94a3b8;
+}
+
+/* ====== BUTTONS ====== */
+.btn-primary {
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  border: none;
+  font-weight: 800;
+  border-radius: 12px;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.2);
+}
+
+.btn-outline-light {
+  border-color: #2563eb;
+  color: #e5e7eb;
+  border-radius: 12px;
+}
+
+.btn-outline-light:hover {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* ====== TABLES (ADMIN) ====== */
+.table-dark {
+  --bs-table-bg: transparent;
+}
+
+.table-dark th {
+  color: #93c5fd;
+  font-weight: 800;
+}
+
+.table-dark td {
+  color: #e5e7eb;
+}
+
+/* ====== TOP NAVBAR (DARK PREMIUM) ====== */
+.navbar {
+  background: linear-gradient(
+    90deg,
+    #071146,
+    #03a5ad,
+    #071146
+  ) !important;
+  border-bottom: 1px solid #1e293b;
+  box-shadow: 0 12px 30px rgba(0,0,0,.6);
+}
+
+/* BRAND */
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.4rem;
+  background: linear-gradient(135deg, #facc15, #facc15);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* BRAND ICON (🎬) biraz canlı olsun */
+.navbar-brand span,
+.navbar-brand::first-letter {
+  color: #38bdf8;
+}
+
+/* NAVBAR BUTTONS */
+.navbar .btn-outline-light {
+  border-color: #1e293b;
+  color: #e5e7eb;
+  font-weight: 600;
+}
+
+.navbar .btn-outline-light:hover {
+  background: #0b2651;
+  color: #ffffff;
+}
+
+.subtitle-brand {
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: #c7d2fe;
+  text-shadow: 0 0 12px rgba(99,102,241,.35);
+}
+
+/* PRIMARY (Kayıt Ol) */
+.navbar .btn-primary {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  border: none;
+  font-weight: 700;
+}
+
+/* ADMIN (Yönetim) */
+.navbar .btn-warning {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  border: none;
+  color: #fdfdfd;
+  font-weight: 700;
+}
+
+/* LOGOUT */
+.navbar .btn-danger {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  border: none;
+  font-weight: 700;
+}
+
+.avatar-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #38bdf8, #2563eb);
+  color: #020617;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.review-item {
+  background: linear-gradient(180deg, #14182f, #101427);
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid #2f376d;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.review-item:hover {
+  transform: translateX(6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.45);
+}
+
+/* ===== AUTH (LOGIN / REGISTER) ===== */
+.auth-card {
+  background: linear-gradient(180deg, #232b55, #181e3a);
+  border-radius: 22px;
+  border: 1px solid #3b4285;
+  box-shadow: 0 25px 60px rgba(0,0,0,.55);
+}
+
+.auth-card h1,
+.auth-card h2 {
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+}
+
+.auth-card .form-label {
+  color: #c7d2fe;
+  font-size: .85rem;
+}
+
+.auth-card .btn {
+  margin-top: .5rem;
+}
+
+.auth-card .text-muted,
+.auth-card .form-text {
+  color: #93c5fd !important;
+}
